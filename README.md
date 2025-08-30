@@ -6,5 +6,6 @@ authors:
     given-names: Vinh-Ha X.
   - family-names: Do
     given-names: Trong-Hop
-version: 1.0.0
-date-released: 2025-08-30
+
+Version: 1.0.0
+Date-released: 2025-08-30
