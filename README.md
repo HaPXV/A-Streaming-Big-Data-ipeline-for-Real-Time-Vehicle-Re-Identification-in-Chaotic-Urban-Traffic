@@ -1,12 +1,25 @@
 # RIVF_2025___Object_ReID___Vinh_Ha
 A Streaming Big-Data Pipeline for Real-Time Vehicle Re-Identification in Chaotic Urban Traffic
 
-Kafka → Spark Structured Streaming → YOLO + ByteTrack → OSNet + FAISS → MongoDB
-Domain: Vietnam motorcycle-dominated traffic · Time gate: 10–30s · Cosine thresholds: 0.65 / 0.75 / 0.85
+We present a deployment-ready, real-time
+vehicle re-identification (Re-ID) pipeline designed for
+motorcycle-dominated, non-lane urban traffic. The system
+integrates Apache Kafka and Spark Structured Streaming
+with modern detection, tracking, and embedding models,
+enabling city-scale streaming operation with temporal-
+gated FAISS retrieval and persistent metadata for analysis.
+To support evaluation under realistic conditions, we re-
+lease a new multi-camera dataset from Ho Chi Minh City
+that captures dense occlusions and irregular flows often
+missing in existing benchmarks. Our work contributes (i) a
+scalable big-data Re-ID pipeline, (ii) a motorcycle-centric
+dataset with reproducible evaluation, and (iii) a foundation
+for practical intelligent transportation and urban security
+applications in developing cities.
 
 <img width="1232" height="697" alt="image" src="https://github.com/user-attachments/assets/25720f9b-3cfe-48a5-be5f-3abec48ce8b3" />
 
-1) Overview
+Overview
 
 This repository contains a deployment-ready streaming Re-ID pipeline for chaotic urban traffic:
 
@@ -19,25 +32,6 @@ Storage: Each detection is persisted to MongoDB with full metadata (embedding, b
 
 Evaluation: Reproducible scripts for mAP/CMC, ROC/PR, and threshold tables, plus LaTeX-ready tables/figures.
 
-2) Key features
-
-⚡ Real-time Spark Structured Streaming with GPU batch inference
-
-🧭 Temporal gating (default 10–30 s) for physically plausible matches
-
-🧠 OSNet (torchreid) embeddings + FAISS cosine search
-
-🎯 Threshold study at 0.65 / 0.75 / 0.85 (operational θ=0.75)
-
-🏍️ Motorcycle-centric; robust to dense occlusions
-
-🧾 MongoDB documents keep full 512-D embeddings + metadata
-
-📊 One-command evaluation → LaTeX tables + PDF plots
-
-3) Repository structure
-
-<img width="1286" height="674" alt="image" src="https://github.com/user-attachments/assets/a1fd9df9-6b3f-4036-ae22-52084fcc1cc1" />
 
 
 
