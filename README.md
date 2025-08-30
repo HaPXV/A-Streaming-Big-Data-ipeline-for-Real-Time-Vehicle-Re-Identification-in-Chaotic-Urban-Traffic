@@ -1,2 +1,2 @@
-# A-Streaming-Big-Data-ipeline-for-Real-Time-Vehicle-Re-Identification-in-Chaotic-Urban-Traffic
-A Streaming Big Data ipeline for Real-Time Vehicle Re-Identification in Chaotic Urban Traffic
+# RIVF_2025___Object_ReID___Vinh_Ha
+RIVF_2025___Object_ReID___Vinh_Ha
