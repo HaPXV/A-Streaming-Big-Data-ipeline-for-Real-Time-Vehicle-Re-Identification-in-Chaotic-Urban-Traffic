@@ -8,4 +8,5 @@ authors:
     given-names: Trong-Hop
 
 Version: 1.0.0
+
 Date-released: 2025-08-30
